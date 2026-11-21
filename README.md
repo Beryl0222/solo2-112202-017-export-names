@@ -11,6 +11,8 @@ TSV 文件采用 UTF-8，首行为列名。行首 id 是该表的稳定记录号
 - `materials/packages.tsv`。master 和 seal 为实际包装上的容器及封条，bill 为独立分单，mask 说明接收阶段可见性。
 - `materials/handoffs.tsv`。actor 为现有领运人登记文字，seen 是实际被交接人抄出的记录。
 - `materials/inspection_points.tsv`。visibility 是代理记录的现场拆包许可及可重贴外标的地点说明。
+- `materials/mark_changes.tsv`。现场抄标与换膜留档，point 指现场检查点。
+- `materials/signing_letters.tsv`。签收授权来函，issuer 是所署机构，scope 保留原文。
 
 ## 运行资料检查
 

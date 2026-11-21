@@ -37,12 +37,41 @@
       "port",
       "stage",
       "visibility"
+    ],
+    "mark_changes.tsv": [
+      "id",
+      "package",
+      "at",
+      "point",
+      "note"
+    ],
+    "signing_letters.tsv": [
+      "id",
+      "party",
+      "at",
+      "issuer",
+      "scope"
     ]
   },
   "references": [
     [
       "mail.tsv",
       "filed_party",
+      "parties.tsv"
+    ],
+    [
+      "mark_changes.tsv",
+      "package",
+      "packages.tsv"
+    ],
+    [
+      "mark_changes.tsv",
+      "point",
+      "inspection_points.tsv"
+    ],
+    [
+      "signing_letters.tsv",
+      "party",
       "parties.tsv"
     ]
   ],
