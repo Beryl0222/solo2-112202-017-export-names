@@ -1,0 +1,58 @@
+{
+  "columns": {
+    "parties.tsv": [
+      "id",
+      "port",
+      "legal",
+      "oldmark",
+      "agent"
+    ],
+    "mail.tsv": [
+      "id",
+      "filed_party",
+      "received",
+      "note"
+    ],
+    "packages.tsv": [
+      "id",
+      "master",
+      "seal",
+      "bill",
+      "port",
+      "outer",
+      "inner",
+      "mask"
+    ],
+    "handoffs.tsv": [
+      "id",
+      "master",
+      "bill",
+      "at",
+      "actor",
+      "seen",
+      "phase"
+    ],
+    "inspection_points.tsv": [
+      "id",
+      "port",
+      "stage",
+      "visibility"
+    ]
+  },
+  "references": [
+    [
+      "mail.tsv",
+      "filed_party",
+      "parties.tsv"
+    ]
+  ],
+  "compound_keys": [
+    [
+      "packages.tsv",
+      [
+        "master",
+        "bill"
+      ]
+    ]
+  ]
+}
